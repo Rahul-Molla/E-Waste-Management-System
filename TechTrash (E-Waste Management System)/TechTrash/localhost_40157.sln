@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TechTrash", "http://localhost:40157", "{07AA0E5F-9EAC-4B02-8C42-1B04313761E5}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_40157"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\Web\TechTrash\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_40157\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_40157"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\Web\TechTrash\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_40157\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\..\..\Desktop\Web\TechTrash\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07AA0E5F-9EAC-4B02-8C42-1B04313761E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07AA0E5F-9EAC-4B02-8C42-1B04313761E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

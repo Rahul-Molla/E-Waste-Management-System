@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+             height: 241px;
+             width: 100%;
+         }
+        .header {
+            background-color: white;
+            color: Black;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 102%;
+            z-index: 1000;
+             top: 10px;
+             left: -15px;
+             height: 216px;
+         }
+        .menu {
+            background-color: #f1f1f1;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        /* Hover effect for buttons */
+        #form1 .header button:hover {
+            color: deepskyblue;
+        }
+         ul {
+             list-style-type:none;
+             background-color: white;
+             color:#319298;
+             font-family:"Century Gothic";
+             Font-Size:"Medium"
+         }
+
+         ul li {
+             display: inline-block;
+             margin-right: 50px;
+         }
+          ul li:hover {
+              color:#17741A
+         }
+
+         .dropdown{display:none;}
+
+         ul li:hover.dropdown{
+             display:block;
+             position:absolute;
+             margin-left:-0.29cm;
+             margin-top:0.27cm:
+         }
+
+         dropdown ul{
+            margin:0;
+            padding:0;
+         }
+        dropdown ul li {
+            display: block;
+        }
+
+        #form1 .header button {
+            margin-right: 100px;
+        }
+
+        .content {
+            padding-top: 13%;
+            width:100%
+            /*padding: 20px;*/;
+             height: 144px;
+         }
+        .footer {
+            background-color: white;
+            color: Green;
+            text-align: center;
+            padding: 10px 0;
+            //position: fixed;
+            bottom: 317px;
+            width: 100%;
+             left: -33px;
+             height: 59px;
+             padding:10Px;
+         }
+         .auto-style1 {
+             width: 100%;
+         }
+         .auto-style3 {
+             width: 36%;
+         }
+         .auto-style6 {
+             text-align: center;
+         }
+
+         </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <div class="header" style="width:100%">
+        <h1 style="text-align: left">&nbsp;&nbsp;&nbsp;&nbsp;
+            <table class="auto-style1" style="padding:0px; width:100%; height: 100px;">
+                <tr>
+                    <td rowspan="2" class="auto-style3">
+                        <asp:Image ID="Image1" runat="server" Height="118px" ImageUrl="~/Photo/logo.png" Width="346px" />
+                    </td>
+                    <td style="background-color: #319298;" class="auto-style6">
+                        <asp:Label ID="Label1" runat="server" Font-Names="Bookman Old Style" Font-Size="Medium" ForeColor="White" Text="Do You Want To Donate?"></asp:Label>
+                    </td>
+                    <td style="background-color: #17741A" class="auto-style6">
+                        <asp:Button ID="Button12" runat="server" BackColor="#17741A" BorderStyle="None" Font-Bold="True" Font-Names="Bahnschrift" Font-Size="Medium" ForeColor="White" Text="SIGN IN" />
+                        <asp:Label ID="Label2" runat="server" BorderStyle="None" Font-Names="Bahnschrift" Font-Size="Medium" ForeColor="White"  Text="OR"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp; 
+                        <!-- <asp:Button ID="Button1" runat="server" Text="HOME" BackColor="White" BorderStyle="None" Font-Bold="True" Font-Names="Century Gothic" Font-Size="Medium" ForeColor="#319298" OnClick="Button1_Click" Width="7%" Style="margin-right:50px" />
+                        <asp:Button ID="Button7" runat="server" Text="CONTACT US" BackColor="White" BorderStyle="None" Font-Bold="True" Font-Names="Century Gothic" Font-Size="Medium" ForeColor="#319298" OnClick="Button1_Click" Width="125px" Style="margin-right:50px" />
+                        <asp:Button ID="Button8" runat="server" Text="ABOUT US" BackColor="White" BorderStyle="None" Font-Bold="True" Font-Names="Century Gothic" Font-Size="Medium" ForeColor="#319298" OnClick="Button1_Click" Width="101px" Style="margin-right:50px" />
+                        <asp:Button ID="Button9" runat="server" Text="E-WASTE RULES" BackColor="White" BorderStyle="None" Font-Bold="True" Font-Names="Century Gothic" Font-Size="Medium" ForeColor="#319298" OnClick="Button1_Click" Width="146px" Style="margin-right:50px" />
+                        <asp:Button ID="Button10" runat="server" Text="IMPORTANT LINKS" BackColor="White" BorderStyle="None" Font-Bold="True" Font-Names="Century Gothic" Font-Size="Medium" ForeColor="#319298" OnClick="Button1_Click" Width="171px" Style="margin-right:50px" />
+                        <asp:Button ID="Button11" runat="server" Text="FAQ" BackColor="White" BorderStyle="None" Font-Bold="True" Font-Names="Century Gothic" Font-Size="Medium" ForeColor="#319298" OnClick="Button1_Click" Width="43px" Style="margin-right:0px"/>
+                        -->
+                        <ul>
+                            <li style="font-size: medium"><a>HOME</a></li>
+                            <li style="font-size: medium">ABOUT US</li>
+                            <li style="font-size: medium">CONTACT US</li>
+                            <li style="font-size: medium">E-WASTE RULE
+                                <div class="dropdown">
+                                    <ol type="1">
+                                        <li>E-Waste Rules, 2022</li>
+                                        <li>E-Waste First Amendment Rules, 2023</li>
+                                        <li>E-Waste Second Amendment Rules, 2023</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li style="font-size: medium">IMPORTANT LINKS
+                                <div class="dropdown">
+                                    <ol type="1">
+                                        <li>Ministry of Environment, Forest and Climate Change</li>
+                                        <li>Ministry of Electronics and Information Technology</li>
+                                        <li>Central Pollution Control Board</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li style="font-size: medium">FAQ
+                                <div class="dropdown">
+                                    <ol type="1">
+                                        <li>FAQ Under E-Waste (Management) Rules</li
+                                    </ol>
+                                </div>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                </table>
+        </h1>
+    </div>
+    <div class="content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="footer" style="width:100%; background-color:#C0C0C0">
+        <p style="color: black; font-size:small">© COPYRIGHT 2024 ALL RIGHTS RESERVED</p>
+        <p style="color:green; font-family:Bahnschrift">TECHTRASH: <span style="color:black; ">&quot;TECH IN THE BIN, HELP EARTH WIN! &quot;</span></p>
+    </div>
+    </form>
+</body>
+</html>
